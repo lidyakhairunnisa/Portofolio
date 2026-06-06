@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lidya Khairunnisa — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav id="topnav">
+  <a class="nav-logo" href="#s-home">LK_</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#" onclick="goTo(0)">Beranda</a></li>
+      <li><a href="#" onclick="goTo(1)">Tentang</a></li>
+      <li><a href="#" onclick="goTo(2)">Pengalaman</a></li>
+      <li><a href="#" onclick="goTo(3)">Proyek</a></li>
+      <li><a href="#" onclick="goTo(4)">Kontak</a></li>
+    </ul>
+    <div class="nav-status">
+      <div class="status-dot"></div>
+      Open to Opportunities
+    </div>
+  </div>
+</nav>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <button class="sb-dot active" onclick="goTo(0)" aria-label="Beranda"></button>
+  <button class="sb-dot" onclick="goTo(1)" aria-label="Tentang"></button>
+  <button class="sb-dot" onclick="goTo(2)" aria-label="Pengalaman"></button>
+  <button class="sb-dot" onclick="goTo(3)" aria-label="Proyek"></button>
+  <button class="sb-dot" onclick="goTo(4)" aria-label="Kontak"></button>
+</div>
+
+<!-- FULLPAGE WRAPPER -->
+<div id="fp-wrapper">
+
+  <!-- SECTION 1: HOME -->
+  <section class="fp-section" id="s-home">
+    <div class="hero-layout">
+      <div>
+        <p class="hero-tag reveal">UI/UX Designer & Software Developer</p>
+        <h1 class="hero-name reveal reveal-d1">Lidya<br><span class="accent">Khairunnisa</span></h1>
+        <p class="hero-sub reveal reveal-d2">// Informatika · Universitas Sebelas Maret</p>
+        <p class="hero-desc reveal reveal-d3">Mahasiswa S1 Informatika Universitas Sebelas Maret  yang memiliki ketertarikan pada pengembangan rekayasa perangkat lunak, UI/UX Design, dan teknologi berbasis website maupun mobile, rekayasa perangkat lunak, dan teknologi web & mobile. Saat ini aktif sebagai intern di Diskominfo Karanganyar dan Asisten Praktikum RPL.</p>
+        <div class="hero-btns reveal reveal-d4">
+          <a class="btn-teal" href="#" onclick="goTo(3)">Lihat Proyek</a>
+          <a class="btn-ghost" href="#" onclick="goTo(4)">Kontak Saya</a>
+        </div>
+      </div>
+      <div class="hero-avatar-box reveal reveal-d2">
+        <div class="avatar-mono">LK</div>
+        <div class="avatar-badge">UNS Informatika '23</div>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- SECTION 2: ABOUT -->
+  <section class="fp-section" id="s-about">
+    <div class="about-grid">
+      <div>
+        <p class="sec-eyebrow reveal">Tentang Saya</p>
+        <h2 class="sec-title reveal reveal-d1">Designer yang<br>juga bisa <span style="color:var(--teal-bright)">ngoding</span></h2>
+        <p class="about-text reveal reveal-d2">Saya adalah mahasiswi Informatika UNS yang tertarik pada perancangan antarmuka yang intuitif dan pengembangan perangkat lunak yang fungsional. Aktif dalam organisasi dan kepanitiaan yang mengasah komunikasi, kolaborasi tim, dan manajemen proyek.</p>
+        <p class="about-text reveal reveal-d3">Saat ini berpengalaman sebagai UI/UX Designer Intern di Dinas Komunikasi dan Informatika Karanganyar, serta Teaching Assistant pada mata kuliah Rekayasa Perangkat Lunak.</p>
+        <div class="about-stats reveal reveal-d4">
+          <div class="stat-box">
+            <div class="stat-num">70+</div>
+            <div class="stat-label">UI Screens dirancang</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">69+</div>
+            <div class="stat-label">Mahasiswa dibimbing</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Proyek diselesaikan</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">10</div>
+            <div class="stat-label">Sponsor diperoleh</div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-col reveal reveal-d2">
+        <div class="skill-group">
+          <div class="skill-group-label">Design Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">User Flow</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Programming</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Tools & Version Control</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">UML</span>
+            <span class="skill-tag">Ms. Office</span>
+            <span class="skill-tag">Google Workspace</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Soft Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Multitasking</span>
+            <span class="skill-tag">Analytical</span>
+            <span class="skill-tag">Koordinasi Tim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: EXPERIENCE -->
+  <section class="fp-section" id="s-experience">
+    <div class="exp-layout">
+      <div>
+        <p class="sec-eyebrow reveal">Pengalaman</p>
+        <h2 class="sec-title reveal reveal-d1" style="font-size:2rem;">Pengalaman<br></h2>
+        <div class="exp-nav reveal reveal-d2">
+          <div class="exp-nav-item active" onclick="switchExp(0)">Asisten RPL</div>
+          <div class="exp-nav-item" onclick="switchExp(1)">UI/UX Intern</div>
+          <div class="exp-nav-item" onclick="switchExp(2)">P!NGFEST</div>
+          <div class="exp-nav-item" onclick="switchExp(3)">Kakak Asuh</div>
+          <div class="exp-nav-item" onclick="switchExp(4)">Moehi Comp.</div>
+        </div>
+      </div>
+      <div>
+        <div class="exp-panel active reveal reveal-d2" id="exp-0">
+          <p class="exp-period">Feb 2026 — Sekarang</p>
+          <p class="exp-role">Asisten Praktikum RPL</p>
+          <p class="exp-company">Universitas Sebelas Maret</p>
+          <ul class="exp-bullets">
+            <li>Mendampingi dan membimbing lebih dari 69 mahasiswa pada dua kelas praktikum Rekayasa Perangkat Lunak dari Prodi Informatika dan PSDKU Informatika.</li>
+            <li>Membantu mahasiswa memahami dan menerapkan proses pengembangan perangkat lunak mulai dari requirement analysis, perancangan sistem, implementasi, hingga pengujian sistem.</li>
+            <li>Memberikan konsultasi teknis terkait pemodelan sistem menggunakan UML, Penyusunan dokumentasi proyek perangkat lunak, penyelesaian permasalahan implementasi proyek, dan pemberiaan feedback kepada mahasiswa.</li>
+          </ul>
+        </div>
+        <div class="exp-panel reveal reveal-d2" id="exp-1">
+          <p class="exp-period">Feb 2026 — Sekarang</p>
+          <p class="exp-role">UI/UX Designer Intern</p>
+          <p class="exp-company">Dinas Komunikasi dan Informatika Karanganyar</p>
+          <ul class="exp-bullets">
+            <li>Berkontribusi dalam pengembangan sistem Electronic Media Listening (eML) untuk monitoring dan pengelolaan aduan masyarakat melalui platform Instagram dan WhatsApp.</li>
+            <li>Merancang lebih dari 70 desain antarmuka pengguna menggunakan Figma yang mencakup modul Admin dan OPD.</li>
+            <li>Menyusun user flow, wireframe, dan prototype untuk mendukung pengelolaan aduan masyarakat secara digital dan terintegrasi.</li>
+          </ul>
+        </div>
+        <div class="exp-panel reveal reveal-d2" id="exp-2">
+          <p class="exp-period">Apr 2025 — Okt 2025</p>
+          <p class="exp-role">Staff Divisi Sponsor</p>
+          <p class="exp-company">P!NGFEST</p>
+          <ul class="exp-bullets">
+            <li>Berhasil memperoleh 10 sponsor dengan total dukungan dana dan barang melalui komunikasi dan negosiasi dengan berbagai mitra eksternal.</li>
+            <li>Menyusun laporan kerja sama dan memastikan kebutuhan sponsor terpenuhi selama acara berlangsung.</li>
+          </ul>
+        </div>
+        <div class="exp-panel reveal reveal-d2" id="exp-3">
+          <p class="exp-period">Aug 2024 — Sep 2024</p>
+          <p class="exp-role">Kakak Asuh Mahasiswa Baru</p>
+          <p class="exp-company">Universitas Sebelas Maret</p>
+          <ul class="exp-bullets">
+            <li>Membimbing dan mendampingi mahasiswa baru dalam proses adaptasi kehidupan kampus di Universitas Sebelas Maret.</li>
+          </ul>
+        </div>
+        <div class="exp-panel reveal reveal-d2" id="exp-4">
+          <p class="exp-period">Jun 2022 — Aug 2022</p>
+          <p class="exp-role">Staff Divisi Liaison Officer</p>
+          <p class="exp-company">Moehi National Competition</p>
+          <ul class="exp-bullets">
+            <li>Menjadi penghubung antara panitia, peserta, dan pihak eksternal selama pelaksanaan kompetisi nasional.</li>
+            <li>Mengelola komunikasi dan koordinasi kebutuhan peserta untuk memastikan kelancaran acara.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PROJECTS -->
+  <section class="fp-section" id="s-projects">
+    <div class="projects-layout">
+      <p class="sec-eyebrow reveal">Proyek</p>
+      <h2 class="sec-title reveal reveal-d1">Karya yang pernah<br>saya kerjakan</h2>
+      <div class="projects-grid reveal reveal-d2">
+        <div class="proj-card">
+          <div class="proj-num">01 — UI/UX Design</div>
+          <div class="proj-name">LokaLivi</div>
+          <div class="proj-desc">E-commerce furniture lokal. Berperan sebagai UI designer utama — merancang user flow, wireframe, dan prototype untuk website dan aplikasi.</div>
+          <div class="proj-chips">
+            <span class="proj-chip">Figma</span>
+            <span class="proj-chip">E-Commerce</span>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:1rem;flex-wrap:wrap;">
+            <a href="https://github.com/lidyakhairunnisa/LokaliviPAB.git" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">App</a>
+            <a href="https://www.figma.com/design/VfTWOUtE4PS4oDuZ0RLcMR/Wood-Furniture-Website-Template--Community-?node-id=0-1&p=f&t=Hh7smK9fn3wxgGv7-0" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">Figma</a>
+            <a href="https://github.com/nazuhifu/lokalivi.git" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">Website</a>
+          </div>
+        </div>
+       <div class="proj-card">
+        <div class="proj-num">02 — UI/UX Design</div>
+        <div class="proj-name">eML System</div>
+        <div class="proj-desc">Sistem monitoring aduan masyarakat terintegrasi Diskominfo. 70+ screen dirancang mencakup modul Admin dan OPD.</div>
+        <div class="proj-chips">
+          <span class="proj-chip">Wireframe</span>
+          <span class="proj-chip">Prototype</span>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:1rem;">
+             <a href="https://www.figma.com/design/1ElDTfa4RfwOZy97NtzA8b/SIAP?node-id=0-1&p=f&t=SGnP4iNJVkCZ5CE8-0" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">Figma</a>
+            </div>
+          </div>
+        <div class="proj-card">
+          <div class="proj-num">03 — Mobile Dev</div>
+          <div class="proj-name">Remote Lamp</div>
+          <div class="proj-desc">Aplikasi Android untuk mengontrol lampu via koneksi Bluetooth. Integrasi antara aplikasi Android dan perangkat IoT.</div>
+          <div class="proj-chips">
+            <span class="proj-chip">Android</span>
+            <span class="proj-chip">IoT</span>
+            <span class="proj-chip">Dart</span>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:1rem;">
+             <a href="https://github.com/lulualaila/RemoteLamp.git" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">GitHub</a>
+             <a href="https://www.figma.com/design/ondQn7jQ1zfnuTCtdmacKB/Lamp-Contol-WMC?node-id=0-1&p=f&t=o0L1KyNulDXnHzWl-0" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">Figma</a></div>
+            </div>
+        <a class="proj-card" href="https://lidya-lulu-20-game-solver.vercel.app/" target="_blank" style="text-decoration:none;color:inherit;">
+          <div class="proj-num">04 — Algorithm</div>
+          <div class="proj-name">24 Game Solver</div>
+          <div class="proj-desc">Aplikasi berbasis algoritma untuk menyelesaikan 24 Game secara otomatis menggunakan kombinasi operasi matematika dan teknik pencarian solusi.</div>
+           <div class="proj-chips">
+            <span class="proj-chip">Python</span>
+            <span class="proj-chip">Algorithm</span>
+          </div>
+        </a>
+        <div class="proj-card">
+          <div class="proj-num">05 — Algorithm</div>
+          <div class="proj-name">Coin Change Program</div>
+          <div class="proj-desc">Implementasi algoritma Greedy dan Dynamic Programming dalam Python untuk menentukan kombinasi koin optimal dengan jumlah minimum.</div>
+          <div class="proj-chips">
+           </div>
+           <div style="display:flex;gap:8px;margin-top:1rem;">
+            <a href="https://github.com/lulualaila/Tugas-Perkuliahan" target="_blank" style="font-family:'Space Mono',monospace;font-size:10px;padding:5px 12px;border:1px solid var(--border-teal);color:var(--teal);text-decoration:none;letter-spacing:0.04em;">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-card" style="display:flex;align-items:center;justify-content:center;border:1px dashed var(--border-teal);background:transparent;">
+          <div style="text-align:center;">
+            <div style="font-family:'Space Mono',monospace;font-size:11px;color:var(--teal);margin-bottom:8px;">More Coming Soon</div>
+            <div style="font-size:28px;color:var(--teal-dim);font-weight:700;">+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: CONTACT -->
+  <section class="fp-section" id="s-contact">
+    <div class="contact-layout">
+      <div>
+        <p class="sec-eyebrow reveal">Kontak</p>
+        <h2 class="contact-big reveal reveal-d1">Ayo<br><span class="accent">Berkolaborasi</span></h2>
+        <p class="contact-sub reveal reveal-d2">Terbuka untuk peluang magang, freelance, kolaborasi proyek, atau sekadar berdiskusi tentang teknologi dan desain.</p>
+        <a href="https://mail.google.com/mail/?view=cm&to=lidyakhairunnisa6@gmail.com" class="btn-teal reveal reveal-d3" style="display:inline-block;text-decoration:none;">Kirim Email</a>
+      </div>
+      <div class="contact-links reveal reveal-d2">
+        <a class="contact-link" href="https://mail.google.com/mail/?view=cm&to=lidyakhairunnisa6@gmail.com">
+          <div class="contact-link-label">
+            <div class="contact-link-icon">✉</div>
+            <div>
+              <div>Email</div>
+              <div class="contact-link-value">lidyakhairunnisa6@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <a class="contact-link" href="https://linkedin.com/in/lidyakhairunnisa" target="_blank">
+          <div class="contact-link-label">
+            <div class="contact-link-icon">in</div>
+            <div>
+              <div>LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/lidyakhairunnisa</div>
+            </div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <a class="contact-link" href="https://github.com/lidyakhairunnisa" target="_blank">
+          <div class="contact-link-label">
+            <div class="contact-link-icon" style="font-family:monospace;font-size:12px;">gh</div>
+            <div>
+              <div>GitHub</div>
+              <div class="contact-link-value">github.com/lidyakhairunnisa</div>
+            </div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <a class="contact-link"  href="https://wa.me/6282289707468" target="_blank">
+          <div class="contact-link-label">
+            <div class="contact-link-icon">☎</div>
+            <div>
+              <div>WhatsApp / Phone</div>
+              <div class="contact-link-value">+62 822-8970-7468</div>
+            </div>
+          </div>
+          <div class="contact-link-arrow">→</div>
+        </a>
+        <div style="padding-top:1.2rem;font-family:'Space Mono',monospace;font-size:10px;color:var(--gray2);letter-spacing:0.08em;">
+          Bengkulu Selatan, Indonesia · Available Remotely
+        </div>
+      </div>
+    </div>
+    <div class="foot-note">Designed & Developed by Lidya Khairunnisa</div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
