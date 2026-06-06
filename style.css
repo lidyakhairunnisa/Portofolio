@@ -243,6 +243,7 @@ body {
   justify-content: center;
   position: relative;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .hero-avatar-box::before {
@@ -265,9 +266,9 @@ body {
 
 .avatar-badge {
   position: absolute;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 8px;
   background: var(--teal);
   text-align: center;
@@ -275,6 +276,13 @@ body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  z-index: 2;
+}
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ── SECTION HEADER ── */
@@ -364,7 +372,7 @@ body {
 .skill-tag {
   font-family: 'Space Mono', monospace;
   font-size: 11px;
-  padding: 5px 12px;
+  padding: 5px 12px;a
   background: var(--bg3);
   border: 1px solid var(--border);
   color: rgba(240,240,240,0.7);
