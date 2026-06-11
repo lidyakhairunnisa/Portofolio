@@ -3,9 +3,16 @@ const sections = document.querySelectorAll('.fp-section');
 const dots = document.querySelectorAll('.sb-dot');
 let current = 0;
 
-function goTo(idx, event) {
-  if (event) event.preventDefault();
-  sections[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+function goTo(idx) {
+  if (!sections[idx]) return;
+  const target = sections[idx];
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    const top = target.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  } else {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
   closeMenu();
 }
 
@@ -68,6 +75,14 @@ if (navOverlay) {
 
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', closeMenu);
+});
+
+document.querySelectorAll('.goto-link').forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    const idx = parseInt(el.getAttribute('data-target'), 10);
+    goTo(idx);
+  });
 });
 
 window.addEventListener('resize', () => {

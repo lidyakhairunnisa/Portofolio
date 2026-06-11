@@ -14,11 +14,11 @@
   <a class="nav-logo" href="#s-home">LK_</a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="#" onclick="goTo(0, event)">Beranda</a></li>
-      <li><a href="#" onclick="goTo(1, event)">Tentang</a></li>
-      <li><a href="#" onclick="goTo(2, event)">Pengalaman</a></li>
-      <li><a href="#" onclick="goTo(3, event)">Proyek</a></li>
-      <li><a href="#" onclick="goTo(4, event)">Kontak</a></li>
+      <li><a href="#" class="goto-link" data-target="0">Beranda</a></li>
+      <li><a href="#" class="goto-link" data-target="1">Tentang</a></li>
+      <li><a href="#" class="goto-link" data-target="2">Pengalaman</a></li>
+      <li><a href="#" class="goto-link" data-target="3">Proyek</a></li>
+      <li><a href="#" class="goto-link" data-target="4">Kontak</a></li>
     </ul>
     <div class="nav-status">
       <div class="status-dot"></div>
@@ -33,11 +33,11 @@
 
 <!-- SIDEBAR -->
 <div id="sidebar">
-  <button class="sb-dot active" onclick="goTo(0, event)" aria-label="Beranda"></button>
-  <button class="sb-dot" onclick="goTo(1, event)" aria-label="Tentang"></button>
-  <button class="sb-dot" onclick="goTo(2, event)" aria-label="Pengalaman"></button>
-  <button class="sb-dot" onclick="goTo(3, event)" aria-label="Proyek"></button>
-  <button class="sb-dot" onclick="goTo(4, event)" aria-label="Kontak"></button>
+  <button class="sb-dot active goto-link" data-target="0" aria-label="Beranda"></button>
+  <button class="sb-dot goto-link" data-target="1" aria-label="Tentang"></button>
+  <button class="sb-dot goto-link" data-target="2" aria-label="Pengalaman"></button>
+  <button class="sb-dot goto-link" data-target="3" aria-label="Proyek"></button>
+  <button class="sb-dot goto-link" data-target="4" aria-label="Kontak"></button>
 </div>
 
 <!-- FULLPAGE WRAPPER -->
@@ -52,8 +52,8 @@
         <p class="hero-sub reveal reveal-d2">// Informatika · Universitas Sebelas Maret</p>
         <p class="hero-desc reveal reveal-d3">Mahasiswa S1 Informatika Universitas Sebelas Maret  yang memiliki ketertarikan pada pengembangan rekayasa perangkat lunak, UI/UX Design, dan teknologi berbasis website maupun mobile, rekayasa perangkat lunak, dan teknologi web & mobile. Saat ini aktif sebagai intern di Diskominfo Karanganyar dan Asisten Praktikum RPL.</p>
         <div class="hero-btns reveal reveal-d4">
-          <a class="btn-teal" href="#" onclick="goTo(3, event)">Lihat Proyek</a>
-          <a class="btn-ghost" href="#" onclick="goTo(4, event)">Kontak Saya</a>
+          <a class="btn-teal goto-link" href="#" data-target="3">Lihat Proyek</a>
+          <a class="btn-ghost goto-link" href="#" data-target="4">Kontak Saya</a>
         </div>
      </div>
 
