@@ -817,17 +817,32 @@ body::before {
   .proj-card { padding: 1.5rem; }
 
   /* CONTACT */
-  .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; max-width: 100%; }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 100%;
+    width: 100%;
+  }
   .contact-big { font-size: clamp(1.8rem, 9vw, 3rem); }
   .contact-link { font-size: 13px; max-width: 100%; }
   .contact-link-value { font-size: 11px; }
   .contact-link-label { flex: 1; min-width: 0; }
+
+  #s-contact {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
   .foot-note {
     position: static;
-    margin-top: 2rem;
+    display: block;
+    margin-top: 2.5rem;
     transform: none;
-    white-space: normal;
-    font-size: 9px;
+    white-space: nowrap;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
   }
 }
 

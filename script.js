@@ -3,8 +3,9 @@ const sections = document.querySelectorAll('.fp-section');
 const dots = document.querySelectorAll('.sb-dot');
 let current = 0;
 
-function goTo(idx) {
-  sections[idx].scrollIntoView({ behavior: 'smooth' });
+function goTo(idx, event) {
+  if (event) event.preventDefault();
+  sections[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
   closeMenu();
 }
 
